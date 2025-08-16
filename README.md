@@ -21,7 +21,7 @@ A simple and interactive cryptocurrency tracking website that displays real-time
 ## ⚡ Installation & Setup
 1. Clone this repository:
    bash
-   git clone https://github.com/your-username/Crypto-Website.git
+   git clone https://github.com/shubhamawchare/Crypto-Website.git
 
 2. Navigate to the project folder:
    Crypto-Website
