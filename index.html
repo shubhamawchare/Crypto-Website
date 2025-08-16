@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="appTitle" style="cursor:pointer;">🚀 Crypto Dashboard</h1>
+    <div class="header-controls">
+      <input id="searchInput" type="text" placeholder="Search coin..." />
+      <select id="currencySelect">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="inr">INR</option>
+        <option value="gbp">GBP</option>
+        <option value="jpy">JPY</option>
+      </select>
+      <button id="portfolioBtn" class="btn-secondary">Portfolio</button>
+      <button id="watchlistBtn" class="btn-secondary">Watchlist</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="coinList"></div>
+    <div id="chartContainer">
+      <div class="chart-header">
+        <h3 id="chartTitle">Select a coin to view</h3>
+        <div class="timeframe-buttons">
+          <button class="timeframe-btn active" data-days="1">1D</button>
+          <button class="timeframe-btn" data-days="7">7D</button>
+          <button class="timeframe-btn" data-days="30">30D</button>
+          <button class="timeframe-btn" data-days="90">90D</button>
+          <button class="timeframe-btn" data-days="365">1Y</button>
+        </div>
+      </div>
+      <canvas id="coinChart" width="400" height="300"></canvas>
+      <div id="coinDetails" class="details"></div>
+      <button id="addHoldingBtn" class="btn-secondary">Add Holding</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
